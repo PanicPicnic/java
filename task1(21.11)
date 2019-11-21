@@ -1,0 +1,140 @@
+
+public class Cat {
+
+	private String name;
+	private String breed;
+	private double age;
+	private String furColor;
+	private String furType;
+	private String gender;
+	private double weight;
+	private boolean livingOutdoor;
+	private boolean isFriendly;
+	
+	public Cat(String name, String breed, double age, String furColor, String furType, String gender, double weight,
+			boolean livingOutdoor, boolean isFriendly) {
+		super();
+		this.name = name;
+		this.breed = breed;
+		this.age = age;
+		this.furColor = furColor;
+		this.furType = furType;
+		this.gender = gender;
+		this.weight = weight;
+		this.livingOutdoor = livingOutdoor;
+		this.isFriendly = isFriendly;
+	}
+
+	public Cat() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public String getBreed() {
+		return breed;
+	}
+
+	public void setBreed(String breed) {
+		this.breed = breed;
+	}
+
+	public double getAge() {
+		return age;
+	}
+
+	public void setAge(double age) {
+		this.age = age;
+	}
+
+	public String getFurColor() {
+		return furColor;
+	}
+
+	public void setFurColor(String furColor) {
+		this.furColor = furColor;
+	}
+
+	public String getFurType() {
+		return furType;
+	}
+
+	public void setFurType(String furType) {
+		this.furType = furType;
+	}
+
+	public double getWeight() {
+		return weight;
+	}
+
+	public void setWeight(double weight) {
+		this.weight = weight;
+	}
+
+	public boolean isLivingOutdoor() {
+		return livingOutdoor;
+	}
+
+	public void setLivingOutdoor(boolean livingOutdoor) {
+		this.livingOutdoor = livingOutdoor;
+	}
+
+	public boolean isFriendly() {
+		return isFriendly;
+	}
+
+	public void setFriendly(boolean isFriendly) {
+		this.isFriendly = isFriendly;
+	}
+
+	public String getGender() {
+		return gender;
+	}
+
+	public void setGender(String gender) {
+		this.gender = gender;
+	}
+	
+	public void meow () {
+		System.out.println("meow meow");
+	}
+	
+	public double eat () {
+		weight=weight+0.1;
+		return weight;
+	}
+	
+	public void rumble() {
+		System.out.println("hrrrrr");
+	}
+	
+	public void sleep() {
+		rumble();
+		meow();
+	}
+	
+	public double play() {
+		weight=weight-0.2;
+		return weight;
+	}
+	
+	public void pet() {
+		rumble();
+	}
+
+	@Override
+	public String toString() {
+		return "Cat [name=" + name + ", breed=" + breed + ", age=" + age + ", furColor=" + furColor + ", furType="
+				+ furType + ", gender=" + gender + ", weight=" + weight + ", livingOutdoor=" + livingOutdoor
+				+ ", isFriendly=" + isFriendly + ", eat()=" + eat() + ", play()=" + play() + "]";
+	}
+	
+	
+}
